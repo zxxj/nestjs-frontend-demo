@@ -37,6 +37,10 @@
             登 录
           </a-button>
         </a-form-item>
+
+        <a-button type="link" style="color: #fff" @click="goResister"
+          >没有账号? 去注册!</a-button
+        >
       </a-form>
     </div>
   </div>
@@ -46,6 +50,9 @@
 import { onMounted, ref } from 'vue';
 import { getUserList } from '@/service/modules/user';
 import { UserOutlined, LockOutlined } from '@ant-design/icons-vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 onMounted(async () => {
   const res = await getUserList();
@@ -61,6 +68,10 @@ const labelCol = { style: { width: '90px' } };
 
 const onFinish = (values) => {
   console.log('Success:', values);
+};
+
+const goResister = () => {
+  router.push('/register');
 };
 </script>
 
