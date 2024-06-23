@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/node": "^20.14.8",
+    "ant-design-vue": "4.x",
     "axios": "^1.7.2",
     "pinia": "^2.1.7",
     "sass": "^1.77.6",
