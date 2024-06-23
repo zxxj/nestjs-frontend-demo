@@ -1,5 +1,5 @@
 <template>
-	<div class="register-container">register</div>
+  <div class="register-container">register</div>
 </template>
 
 <script setup>
